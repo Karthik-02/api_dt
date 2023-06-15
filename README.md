@@ -120,7 +120,7 @@ Now let us delete the above event with URL - 'http://localhost:3000/api/v3/app/e
 
 # Solution for Task 2:
 
-# # API Documentation for Nudge Management API:
+# API Documentation for Nudge Management API:
 
 # Introduction
 
