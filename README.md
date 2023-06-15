@@ -23,10 +23,10 @@ Document the details about the API, the description of the API is given below__
 ![image](https://github.com/Karthik-02/api_dt/assets/81423983/040c1267-bd58-45a6-b058-cb843d4bddc6)
 
 # Description about the page	
-1	User can tag an event which he wants to create a nudge about and give this nudge a title.
-2	User should be able to upload a image which will be shown as a cover for the nudge
-3	Add a time at which the user wants to send the nudge
-4	The nudge will have a description
+1	User can tag an event which he wants to create a nudge about and give this nudge a title.__
+2	User should be able to upload a image which will be shown as a cover for the nudge__
+3	Add a time at which the user wants to send the nudge__
+4	The nudge will have a description__
 5	This nudges will also have a icon and one line invitation which will be shown where the nudge is minimized or when it is shown along with a event/article
 	
 	
