@@ -227,47 +227,80 @@ invitation: string - The one-line invitation for the nudge.
 # 1.Get All Nudges
 
 **Request:** GET /api/v1/nudges
+
 **Response:**
-**Status:** 200 OK
-Content-Type: application/json
+
+Status:200 OK
+
+**Content-Type:** application/json
 
 [
+
   {
+  
     "_id": "609a1378a2b12c00153a79ae",
+    
     "title": "Event Nudge 1",
+    
     "image": "/uploads/nudge1.jpg",
+    
     "sendTime": "2023-06-16T09:00:00Z",
+    
     "description": "This is a nudge for Event 1",
+    
     "icon": "event_icon",
+    
     "invitation": "Join us for an exciting event!"
+    
   },
+  
   {
+  
     "_id": "609a139fa2b12c00153a79af",
+    
     "title": "Event Nudge 2",
+    
     "image": "/uploads/nudge2.jpg",
+    
     "sendTime": "2023-06-17T14:30:00Z",
+    
     "description": "This is a nudge for Event 2",
+    
     "icon": "event_icon",
+    
     "invitation": "Don't miss out on the fun!"
+    
   }
+  
 ]
+
 
 # 2.Create Nudge
 
-**Request:**POST /api/v1/nudges
+**Request:** POST /api/v1/nudges
 
-Payload:
+**Payload:**
+
 {
+
   "title": "Event Nudge 3",
-  "image": <file>,
-  "sendTime": "2023-06-18T18:00:00Z",
-  "description": "This is a nudge for Event 3",
-  "icon": "event_icon",
-  "invitation": "Join us for a memorable evening!"
-}
   
-Response:
+  "image": <file>,
+	
+  "sendTime": "2023-06-18T18:00:00Z",
+	
+  "description": "This is a nudge for Event 3",
+	
+  "icon": "event_icon",
+	
+  "invitation": "Join us for a memorable evening!"
+	
+}
+	
+**Response:**
+	
 Status: 200 OK
+	
 Content-Type: application/json
 
 {
@@ -279,25 +312,40 @@ Content-Type: application/json
 Request:PUT /api/v1/nudges/609a13eca2b12c00153a79b0
 
 Payload:
+	
 {
+	
   "title": "Updated Event Nudge 3",
+	
   "sendTime": "2023-06-18T20:00:00Z"
+	
 }
+	
   
 Response:
+	
 Status: 200 OK
+	
 Content-Type: application/json
 
+	
 {
+	
   "modifiedCount": 1
+	
 }
   
+	
 # 5.Delete Nudge
 
+	
 Request:DELETE /api/v1/nudges/609a13eca2b12c00153a79b0
   
+	
 Response:
+	
 Status: 200 OK
+	
 Content-Type: application/json
 
 {
