@@ -135,63 +135,100 @@ The base URL for accessing the Nudge Management API is: 'https://api.example.com
 The following API endpoints are available for managing nudges:
 
 # Get All Nudges
-Request Type: GET
-Endpoint: /api/v1/nudges
-Description: Retrieves all the nudges created by the user.
+
+**Request Type:** GET
+
+**Endpoint:** /api/v1/nudges
+
+**Description:** Retrieves all the nudges created by the user.
 
 # Get Nudge by ID
-Request Type: GET
-Endpoint: /api/v1/nudges/:id
-Description: Retrieves a specific nudge by its unique ID.
+
+**Request Type:** GET
+
+**Endpoint:** /api/v1/nudges/:id
+
+**Description:** Retrieves a specific nudge by its unique ID.
 
 # Create Nudge
-Request Type: POST
-Endpoint: /api/v1/nudges
-Payload:
+
+**Request Type:** POST
+
+**Endpoint:** /api/v1/nudges
+
+**Payload:**
+
 title: string (required) - The title of the nudge.
+
 image: file (required) - The image file to be used as the nudge cover.
+
 sendTime: string (required) - The time at which the nudge should be sent.
+
 description: string (required) - The description of the nudge.
+
 icon: string - The icon for the nudge.
+
 invitation: string - The one-line invitation for the nudge.
+
 Description: Creates a new nudge with the provided information.
 
 # Update Nudge
-Request Type: PUT
-Endpoint: /api/v1/nudges/:id
-Payload:
+
+**Request Type:** PUT
+
+**Endpoint:** /api/v1/nudges/:id
+
+**Payload:**
+
 title: string - The updated title of the nudge.
+
 image: file - The updated image file for the nudge cover.
+
 sendTime: string - The updated time at which the nudge should be sent.
+
 description: string - The updated description of the nudge.
+
 icon: string - The updated icon for the nudge.
+
 invitation: string - The updated one-line invitation for the nudge.
+
 Description: Updates the information of a specific nudge.
 
 # Delete Nudge
-Request Type: DELETE
-Endpoint: /api/v1/nudges/:id
-Description: Deletes a specific nudge by its unique ID.
+
+**Request Type:** DELETE
+
+**Endpoint:** /api/v1/nudges/:id
+
+**Description:** Deletes a specific nudge by its unique ID.
 
 
 # Object Data Model for Nudge
+
 The data model for a nudge consists of the following properties:
 
+
 _id: ObjectId - The unique identifier for the nudge.
+
 title: string - The title of the nudge.
+
 image: string - The URL or file path of the nudge cover image.
+
 sendTime: string - The time at which the nudge should be sent.
+
 description: string - The description of the nudge.
+
 icon: string - The icon for the nudge.
+
 invitation: string - The one-line invitation for the nudge.
 
 # API Usage Examples
 
 # 1.Get All Nudges
 
-Request: GET /api/v1/nudges
-Response:
-Status: 200 OK
+**Request:** GET /api/v1/nudges
+**Response:**
+**Status:** 200 OK
 Content-Type: application/json
 
 [
@@ -217,7 +254,8 @@ Content-Type: application/json
 
 # 2.Create Nudge
 
-Request:POST /api/v1/nudges
+**Request:**POST /api/v1/nudges
+
 Payload:
 {
   "title": "Event Nudge 3",
@@ -267,4 +305,5 @@ Content-Type: application/json
 }
   
 # Conclusion
+	
 This API documentation provides an overview of the Nudge Management API and its available endpoints for creating, updating, retrieving, and deleting nudges. Use the provided API endpoints, payloads, and examples to interact with the API and manage nudges effectively for your events.
