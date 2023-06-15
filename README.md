@@ -4,8 +4,8 @@
 # Task 1:
 
 # API Creation						
-Go through the documentation and create the API as instructed						
-Front end is not required, you can show it on postman						
+Go through the documentation and create the API as instructed__					
+Front end is not required, you can show it on postman__					
 						
 ![image](https://github.com/Karthik-02/api_dt/assets/81423983/b9622dc3-2549-49ef-b27e-6ce966cb1e74)
 
@@ -17,7 +17,7 @@ Front end is not required, you can show it on postman
 # Task 2:
 
 # API Documentation 			
-Document the details about the API, the description of the API is given below			
+Document the details about the API, the description of the API is given below__		
 ![image](https://github.com/Karthik-02/api_dt/assets/81423983/743f772b-f0d3-4829-a1e4-86692d1a2c30)
 
 ![image](https://github.com/Karthik-02/api_dt/assets/81423983/040c1267-bd58-45a6-b058-cb843d4bddc6)
@@ -42,11 +42,11 @@ Document the details about the API, the description of the API is given below
 # Solution to Task 1:
 
 # Step 1 :
-1. Once you cloned this repository, you have to install the required packages using the given package files.
-2. After that, using CMD/PWS, you can run the command:
-   > node app.js
-3. The above command will start the server.
-4. After starting the server, You can see the following in the localhost:3000 URL,
+1. Once you cloned this repository, you have to install the required packages using the given package files.__
+2. After that, using CMD/PWS, you can run the command:__
+   > node app.js__
+3. The above command will start the server.__
+4. After starting the server, You can see the following in the localhost:3000 URL,__
           
  ![image](https://github.com/Karthik-02/api_dt/assets/81423983/95792859-f673-4571-a45c-6cb26d2bb107)
  ![image](https://github.com/Karthik-02/api_dt/assets/81423983/5e2706e9-5496-4e0d-a25f-6d47582bd567)
