@@ -42,18 +42,19 @@ Document the details about the API, the description of the API is given below
 # Solution to Task 1:
 
 # Step 1 :
-          1. Once you cloned this repository, you have to install the required packages using the given package files.
-          2. After that, using CMD/PWS, you can run the command:
-           > node app.js
-          3. The above command will start the server.
-          ![image](https://github.com/Karthik-02/api_dt/assets/81423983/95792859-f673-4571-a45c-6cb26d2bb107)
-          4. After starting the server, You can see the following in the localhost:3000 URL,
-          ![image](https://github.com/Karthik-02/api_dt/assets/81423983/5e2706e9-5496-4e0d-a25f-6d47582bd567)
+1. Once you cloned this repository, you have to install the required packages using the given package files.
+2. After that, using CMD/PWS, you can run the command:
+   > node app.js
+3. The above command will start the server.
+4. After starting the server, You can see the following in the localhost:3000 URL,
+          
+ ![image](https://github.com/Karthik-02/api_dt/assets/81423983/95792859-f673-4571-a45c-6cb26d2bb107)
+ ![image](https://github.com/Karthik-02/api_dt/assets/81423983/5e2706e9-5496-4e0d-a25f-6d47582bd567)
+ 
+ 
 # Step 2 :
-          1. Now Fire the following API'S.
-          2. First I have Fired an API to the URl - 'http://localhost:3000/api/v3/app/events' to insert the sample values in the database. the sample data is given below:
-
-[
+1. Now Fire the following API'S.
+2. First I have Fired an API to the URl - 'http://localhost:3000/api/v3/app/events' to insert the sample values in the database. the sample data is given below:
   {
     "type": "event",
     "uid": 18,
@@ -69,26 +70,51 @@ Document the details about the API, the description of the API is given below
     "sub_category": "Subcategory 1",
     "rigor_rank": 3,
     "attendees": [1, 2, 3]
-  },
-  {
-    "type": "event",
-    "uid": 18,
-    "name": "Sample Event 2",
-    "tagline": "A proper tagline for Sample Event 2",
-    "schedule": "2023-06-17T14:30:00Z",
-    "description": "Sample description for Sample Event 2",
-    "files": {
-      "image": "sample_image2.jpg"
-    },
-    "moderator": "Jane Smith",
-    "category": "Category 2",
-    "sub_category": "Subcategory 2",
-    "rigor_rank": 4,
-    "attendees": [4, 5, 6]
   }
-]
+
+![image](https://github.com/Karthik-02/api_dt/assets/81423983/52efe046-0ff7-4534-813d-381514aba387)
+
+3.Create an API request to update an event:
+
+Set the request method to PUT.
+Set the request URL to http://localhost:3000/api/v3/app/events/{id} where {id} is the ID of the event you want to update.
+In the request body, provide the updated event details.
+Send the request.
+
+![image](https://github.com/Karthik-02/api_dt/assets/81423983/302b4d83-de04-4dac-8696-87c3e72ea538)
 
 
+4.GET /api/v3/app/events
+Description: Retrieve events based on query parameters.
+Query Parameters:
+id (optional): The ID of the event to retrieve.
+type (optional): The type of events to retrieve. Use "latest" to get the latest events.
+limit (optional): The maximum number of events to retrieve.
+page (optional): The page number for pagination.
+Example Request: GET http://localhost:3000/api/v3/app/events?id=648b44db4d7c6cffd475d0b9
+
+![image](https://github.com/Karthik-02/api_dt/assets/81423983/679b6b78-9d20-4b5a-bbb1-0573b526c5e4)
+
+5.Get latest events with pagination:
+
+Request Type: GET
+URL: http://localhost:3000/api/v3/app/events?type=latest&limit=5&page=1
+Example URL: http://localhost:3000/api/v3/app/events?type=latest&limit=5&page=1
+
+![image](https://github.com/Karthik-02/api_dt/assets/81423983/3a59c567-6daa-460d-9dfa-fe6fa46aab98)
+
+6.Delete an event by its id:
+
+Request Type: DELETE
+URL: http://localhost:3000/api/v3/app/events/:id
+Example URL: http://localhost:3000/api/v3/app/events/60c5eb04e827470ef89209b2
+
+For this I have created a new event as below,
+![image](https://github.com/Karthik-02/api_dt/assets/81423983/e30a965d-80b9-45c8-90ae-73ab929b70d4)
+
+Now let us delete the above event with URL - 'http://localhost:3000/api/v3/app/events/648b6eb485376cd88215b0df'
+
+![image](https://github.com/Karthik-02/api_dt/assets/81423983/5b867f81-d7eb-4379-80b2-5d90f78e17c5)
 
 
 
